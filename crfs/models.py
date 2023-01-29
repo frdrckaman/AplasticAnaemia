@@ -3,10 +3,10 @@ from simple_history.models import HistoricalRecords
 
 from crfs.choices import SEX, YES_NO, STEROID, ANTIHISTAMINE, PROPHYLAXIS, ANTIBIOTIC, \
     ANTIFUNGAL, COMPLETE_TREATMENT
-from mixin import BaseUuidModel
+from .mixin import BaseUuidModel
 
 
-class CentreManagerPhoto(BaseUuidModel):
+class AplasticAnaemiaCrf(BaseUuidModel):
     name = models.CharField(
         verbose_name="Name:",
         max_length=80
@@ -31,13 +31,18 @@ class CentreManagerPhoto(BaseUuidModel):
         help_text="in Kg"
     )
 
+    file_no = models.CharField(
+        verbose_name="File Number:",
+        max_length=80,
+    )
+
     region = models.CharField(
         verbose_name="Region",
-        max_length="24"
+        max_length=24
     )
     district = models.CharField(
         verbose_name="District",
-        max_length="24"
+        max_length=24
     )
     date_admission = models.DateField(
         verbose_name="Date Of Admission:",
@@ -349,5 +354,14 @@ class CentreManagerPhoto(BaseUuidModel):
         verbose_name="Any clinical notes:",
         null=True,
     )
+
+    history = HistoricalRecords()
+
+    def __str__(self):
+        return self.file_no
+
+    class Meta(BaseUuidModel.Meta):
+        verbose_name = "Aplastic Anaemia CRF"
+        verbose_name_plural = "Aplastic Anaemia CRF"
 
 
