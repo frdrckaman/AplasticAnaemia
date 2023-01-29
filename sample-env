@@ -1,8 +1,8 @@
-DJANGO_SECRET_KEY=django-insecure-9oe4b4os4u+p)$g@8nax@_%z7bpj8qf=02*^m8!6@
+DJANGO_SECRET_KEY=django-insecure-u+p)$g@8nax@_%z7bpj8qf=02*^m8!6@
 DJANGO_DEBUG=True
 DJANGO_LOGIN_REDIRECT_URL=
 DEBUG_TOOLBAR=False
-DJANGO_APP_NAME=AplasticAnaemia
+DJANGO_APP_NAME=Aplastic Anaemia Database
 DJANGO_AUTO_CREATE_KEYS=False
 DATABASE_SQLITE_ENABLED=True
 DATABASE_URL=
