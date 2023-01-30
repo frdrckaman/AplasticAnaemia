@@ -23,3 +23,10 @@ conda activate anemia     --activate env
 
 username: imma
 password: 12345678
+
+*************************************************************
+conda deactivate
+cd Projects/AplasticAnaemia
+conda activate anemia
+python manage.py runserver
+
