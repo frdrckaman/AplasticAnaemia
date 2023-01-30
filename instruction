@@ -20,6 +20,8 @@ conda activate anemia     --activate env
 * python manage.py migrate          --apply migration
 * python manage.py createsuperuser      --create super user account
 
+******************* GIT **************
+git pull        -- pull changes/ update app
 
 username: imma
 password: 12345678
