@@ -176,6 +176,7 @@ class AplasticAnaemiaCrfAdmin(BaseSimpleHistoryAdmin):
     )
 
     radio_fields = {
+        "sex": admin.VERTICAL,
         "atg": admin.VERTICAL,
         "cyclosporine": admin.VERTICAL,
         "steroid": admin.VERTICAL,
