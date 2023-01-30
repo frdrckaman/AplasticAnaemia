@@ -13,7 +13,7 @@
 ************ Anaconda ************
 conda create -n env-name python=3.9     --create new env
 conda deactivate        --deactivate env
-conda activate env-name     --activate env
+conda activate anemia     --activate env
 
 ************* Django *******************
 * python manage.py runserver        --start application
